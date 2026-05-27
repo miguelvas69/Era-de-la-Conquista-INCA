@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jogo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="container">
+        <h1>¡Completa los datos correctamente!</h1>
+        <p>¿Cómo puede llamarte tu gente?</p>
+        <input type="text" id="txt">
+        <br>
+        <p>Los incas Sapa fueron los gobernantes que tomaron la iniciativa en las disputas, mientras que Coya fue su fiel compañero
+            que poseía gran importancia política y religiosa. </p>
+        <p>¿Quién eres tú?</p>
+        <input type="radio" name="sexo" value="homem">Sapa inca (homem)<input type="radio" name="sexo"
+            value="mulher">Coya (mulher)
+        <br>
+        <br>
+        <div id="alerta">
+            NOTA: Una vez que la información se proporcione correctamente, haga clic en guardar y luego comience finalmente a
+            quiz!
+        </div>
+        <a href="quiz.html">
+            <input type="image" src="imagens/bi.png" id="ini">
+        </a>
+        <input type="image" src="imagens/salvar.png" id="ini" onclick="salvar()">
+    </div>
+
+    <script>
+
+        function salvar() {
+
+            let nome =
+                document.getElementById('txt').value;
+
+            let sexo =
+                document.querySelector(
+                    'input[name="sexo"]:checked'
+                )?.value;
+
+            if (nome === "" || !sexo) {
+
+                alert(
+                    "Preencha todas as informações!"
+                );
+
+                return;
+
+            }
+
+            localStorage.setItem(
+                'nomeUsuario',
+                nome
+            );
+
+            localStorage.setItem(
+                'genero',
+                sexo
+            );
+
+            alert("Dados salvos!");
+
+        }
+
+    </script>
+</body>
+
+</html>

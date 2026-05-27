@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="container">
+        <div id="avatar">
+            <div id="perfil"></div>
+            <div id="nn">
+                <h1 id="nome"></h1>
+            </div>
+            <div id="painel">
+                <button id="musica" onclick="musicaT()">musica</button>
+                <button id="musica" onclick="carregar()">carregar</button>
+                <a href="resultado.html">
+                    <button id="musica" onclick="salvar()">resultado</button>
+                </a>
+            </div>
+            <div id="dec">
+                <p id="moral"></p>
+                <p id="tropa"></p>
+                <p id="recursos"></p>
+            </div>
+        </div>
+        <div id="imga">
+            <p id="desc">
+                Aquí, preguntas basadas en situaciones y desafíos enfrentados durante la invasión del
+                colonizadores. Como líder del Imperio Inca, cada decisión que tomara podría fortalecer su resistencia o
+                acelerar la caída de su gente. Justo debajo estarán las alternativas que marcarán el curso de la historia.
+
+                En la esquina superior izquierda estarán tus estados: Moral, Recursos y Ejército (100% en total inicialmente).
+                Estos factores serán
+                alterado según tus elecciones y determinará el destino del imperio y el final de tu viaje.
+
+            </p>
+            <p id="aviso">¡No hagas clic en el botón "resultado" hasta que termines el cuestionario!</p>
+            <audio id="musica">
+                <source src="audio/pergunta.mp4" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+    <div id="res"></div>
+    <script src="javaScrip/quiz.js"></script>
+</body>
+
+</html>

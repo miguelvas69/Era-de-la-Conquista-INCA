@@ -1,0 +1,285 @@
+body {
+    background-image: url(imagens/telaQ.png);
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 300px 1000px;
+    gap: 100px;
+}
+
+#avatar {
+    height: 300px;
+    width: 300px;
+    margin-left: 40px;
+    border: 4px solid rgba(255, 215, 120, 0.2);
+    background-color: rgba(20, 10, 5, 0.75);
+    color: #f5d7a1;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+}
+
+#imga {
+    border: 4px solid rgba(255, 215, 120, 0.2);
+    background-color: rgba(20, 10, 5, 0.75);
+    color: #f5d7a1;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+}
+
+#perfil {
+
+    height: 190px;
+    width: 170px;
+}
+
+#nn {
+
+    width: 130px;
+    height: 40px;
+    margin-left: 180px;
+    margin-top: -200px;
+    color: #f5d7a1;
+}
+
+#img {
+    width: 160px;
+    height: 185px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#dec {
+    margin-top: -90px;
+    margin-left: 30px;
+
+}
+
+#desc {
+    width: 800px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+#res {
+    display: grid;
+    grid-template-columns: 160px;
+    border: 4px solid rgba(255, 215, 120, 0.2);
+    background-color: rgba(20, 10, 5, 0.75);
+    color: #f5d7a1;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    margin-top: 30px;
+    height: 400px;
+
+}
+
+#carregar {
+    width: 140px;
+    height: 100px;
+    margin-left: 500px;
+}
+
+button {
+    height: 50px;
+    width: 1000px;
+    margin-left: 250px;
+    margin-top: 20px;
+    border-radius: 12px;
+
+    background: linear-gradient(to bottom,
+            #5e3b1d,
+            #2d1b0f);
+
+    color: #f5deb3;
+
+    font-size: 18px;
+
+    font-family: serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 0 10px rgba(0, 0, 0, 0.5);
+
+    border: 2px solid #c9a35d;
+}
+
+#musica {
+    height: 40px;
+    width: 100px;
+    margin-left: 1000px;
+    margin-top: 50px;
+    border-radius: 12px;
+
+    background: linear-gradient(to bottom,
+            #5e3b1d,
+            #2d1b0f);
+
+    color: #f5deb3;
+
+    font-size: 18px;
+
+    font-family: serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 0 10px rgba(0, 0, 0, 0.5);
+
+    border: 2px solid #c9a35d;
+    position: relative;
+}
+
+#painel{
+    margin-left: -810px;
+    margin-top: -40px
+}
+
+#aviso{
+    background-color: #5e3b1d;
+    color: #c9a35d;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 400px;
+}
+
+/* ===== RESPONSIVIDADE PARA CELULARES ===== */
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 15px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #avatar {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        min-height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+
+    #imga,
+    #res {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #desc {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 25px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    #res {
+        grid-template-columns: 1fr;
+        height: auto;
+        min-height: 300px;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 1000px;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+
+    #musica {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    #carregar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #painel {
+        margin-left: 140px;
+        margin-top: 10px;
+    }
+
+    #aviso {
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    #avatar {
+        max-width: 260px;
+        min-height: 260px;
+    }
+
+    #perfil {
+        width: 140px;
+        height: 160px;
+    }
+
+    #img {
+        width: 130px;
+        height: 150px;
+    }
+
+    #nn {
+        margin-left: 140px;
+        margin-top: -170px;
+        width: 100px;
+    }
+
+    #dec {
+        margin-top: -60px;
+        margin-left: 20px;
+    }
+
+    #desc {
+        font-size: 16px;
+    }
+
+    button {
+        min-height: 50px;
+        height: auto;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #carregar {
+        width: 120px;
+        height: auto;
+    }
+}
