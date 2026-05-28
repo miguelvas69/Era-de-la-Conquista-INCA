@@ -6,7 +6,7 @@ let per = document.getElementById("desc")
 let res = document.getElementById('res')
 const musica = new Audio("audio/pergunta.mp4");
 let moral = 20
-let tropa = 20
+let exercito = 20
 let recurso = 20
 let atual = 0
 
@@ -482,9 +482,9 @@ function atualizarStatus() {
         .innerText =
         `Recursos: ${recurso}`;
 
-    document.getElementById("tropa")
+    document.getElementById("exercito")
         .innerText =
-        `Ejército: ${tropa}`;
+        `Ejército: ${exercito}`;
 
 }
 
@@ -522,11 +522,11 @@ function carregar() {
 
                 recurso += resposta.recursos;
 
-                tropa += resposta.exercito;
+                exercito += resposta.exercito;
 
                 moral = Math.max(0, moral);
                 recurso = Math.max(0, recurso);
-                tropa = Math.max(0, tropa);
+                exercito = Math.max(0, exercito);
 
                 atualizarStatus();
 

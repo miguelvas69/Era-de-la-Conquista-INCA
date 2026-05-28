@@ -1,6 +1,6 @@
 let moral = Number(localStorage.getItem("moral"));
 let recurso = Number(localStorage.getItem("recursos"));
-let exercito = Number(localStorage.getItem("tropa"));
+let exercito = Number(localStorage.getItem("exercito"));
 
 document.getElementById("moral").innerText =
     `Moral: ${moral}`;
@@ -38,7 +38,7 @@ else if (pontos >= 20) {
     final = "Conseguiste retrasar el avance de los invasores y preservar parte de las tradiciones del imperio. Sin embargo, los conflictos internos y las dificultades económicas han debilitado su resistencia. Su pueblo recordará sus esfuerzos con respeto, pero también se preguntará si decisiones diferentes podrían haber cambiado el destino de la nación";
 }
 else if (pontos < 20) {
-    titulo = "O Último Sapa Inca"
+    titulo = " Último Sapa Inca"
     imagem = "imagens/finais/finalR.png"
     final = "Sus decisiones hundieron al imperio en una crisis sin precedentes. La población perdió la confianza en su liderazgo, los recursos se agotaron y el ejército no pudo contener el avance enemigo. Las ciudades fueron abandonadas, las alianzas rotas y los últimos defensores derrotados. Cuando se escribió la historia, su nombre no apareció entre los grandes líderes, sino como el gobernante que presenció el fin de una de las civilizaciones más grandes de Estados Unidos";
 }

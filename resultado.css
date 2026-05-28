@@ -15,15 +15,25 @@
     font-family: "Cinzel", serif;
     display: flex;
     gap: 30px;
-    margin-left: 230px;
+    margin-left: 590px;
 }
 
 #final{
     width: 600px;
-    margin-left: 100px;
+    margin-left: 450px;
 }
 body{
     background: url(imagens/telaP.png);
+}
+
+#voltar{
+    background: linear-gradient(to bottom,
+            #5e3b1d,
+            #2d1b0f);
+
+    color: #f5deb3;
+    margin-right: 50px;
+    margin-top: -10px   ;
 }
 
 
@@ -58,6 +68,15 @@ body{
         margin-right: auto;
         box-sizing: border-box;
     }
+    #voltar{
+    background: linear-gradient(to bottom,
+            #5e3b1d,
+            #2d1b0f);
+
+    color: #f5deb3;
+    margin-left: 60px;
+    margin-top: -10px   ;
+}
 }
 
 @media (max-width: 480px) {
